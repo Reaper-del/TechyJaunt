@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* to caclulcate width and height */
+}
+
+header {
+    background-color: steelblue;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+.content {
+    display: flex;
+    flex-wrap: wrap; /* Moves the element to a new line if the space on that line is limited */
+    justify-content: space-around; /*equally disribute space between items */
+    padding: 20px;
+}
+
+.container-Item {
+    flex: 1 1 30%; 
+    padding: 40px;
+    margin: 10px;
+    min-width: 200px;
+    background-color: lightcoral;
+    color: white;
+    text-align: center;
+}
+
+/* media queries for responsiveness */
+
+/* larger screen > 768px */
+@media (min-width:768px) {
+    .container-Item {
+        flex: 1 1 30%; /*display 3 times per row */
+    }
+}
+
+/*small screens <768px */
+@media (max-width:768px) {
+    .container-Item {
+        flex: 1 1 45%; /* 45% means it'll display two boxes or items per row */
+         }
+}
+
+/* smaller screens < 480px */
+@media (max-width:480px) {
+    .container-Item {
+        flex: 1 1 100%; /* 100% means it'll display one box or item per row */
+    }
+} 
+
+
+
+
+
+
+
+h1 {
+    display: inline;
+}
+img {
+    display: block;
+}
+ 
+a {
+    display: none;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between; /*distribute space between items */
+    align-items: center; /* align items vertically in the center */
+    height: 300px;
+    background-color: lightgray;
+}
+
+.box {
+    flex: 1;
+    /* flex grow -- grow at the same rate --1
+    flex shrink -- shrink equally --1
+    flex-basis-- default/initial size of the boxes --0
+    */
+    padding: 20px; /*space between a content and the element */
+    margin: 0 10px; /* 0 for vertical plane (top and bottom) 10 for horizontal plane (left and right) */
+    background-color: steelblue;
+    color: white;
+    text-align: center;
+}
+

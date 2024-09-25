@@ -1,0 +1,55 @@
+body {
+    background-color: aqua;
+}
+
+.responsive-nav {
+    background-color: black;
+    color: white;
+    padding: 30px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: relative;
+}
+
+#menu {
+    list-style: none;
+    display: flex;
+}
+
+#menu a {
+    color: white;
+    padding: 5px;
+    text-decoration: none;
+}
+
+.menu-toggle {
+    display: none;
+    font-size: 20px;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+}
+
+@media (max-width: 768px) {
+    .menu-toggle {
+    display: block; }
+}
+
+#menu {
+    display: none;
+
+    flex-direction: column;
+    gap: 2rem;
+    margin-top: 50px;
+}
+
+
+
+#menu.show {
+    display: flex;
+}
+
+.responsive-nav {
+    background-color: brown;
+}

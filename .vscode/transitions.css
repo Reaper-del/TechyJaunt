@@ -1,0 +1,104 @@
+/* 
+    Transition */
+/* .btn{
+    background-color: white;
+    color: red;
+    outline: none;
+    border: 1px solid red;
+    border-radius: 8px;
+    padding: 0.5rem 2rem;
+    transition-property: background-color, color;
+    transition-timing-function: ease-out;
+    transition-delay: 0.1s;
+    transition:background-color 0.3s ease-out 0.5s,color 0.3s ease-out 0.5s ;
+}
+
+.btn:hover{
+    background-color: red;
+    color: white;
+    
+}
+        Translate
+ */
+
+ /* .box {
+    width: 80px;
+    height: 80px;
+    background-color: blue;
+    margin: 20px;
+    transform: translate(50px, 100px);
+ } */
+
+    /* Rotate */
+ /* .box {
+    width: 80px;
+    height: 80px;
+    background-color: blue;
+    margin: 20px;
+    transform: rotate(120deg);
+ }
+
+i{
+    transition:all 0.5s ease;
+}
+
+ i:hover{
+    transform: rotate(180deg);
+ } */
+/* 
+    Scale */
+ /* .box{
+    width: 80px;
+    height: 80px;
+    background-color: red;
+    transition: all 0.5s ease;
+ }
+
+ .box:hover {
+    transform: scale(1.5, 0.5);
+ } */
+
+    /* Skew */
+    /* .box{
+        width: 80px;
+        height: 80px;
+        background-color: red;
+        transition: all 0.5s ease;
+     }
+     .box:hover {
+        transform: skew(20deg, 10deg);
+     } */
+
+     /* Matrix  */
+     /* .box{
+        width: 80px;
+        height: 80px;
+        background-color: red;
+        transition: all 0.5s ease;
+    }
+    .box:hover {
+        transform: matrix(1, 0.5, 0.5, 1, 50, 50);
+    } */
+     
+/* 
+    Animations */
+    .bounce {
+        width: 100px;
+        height: 100px;
+        background-color: #3498db;
+        animation: bounce 1s 2;
+
+    }
+
+    @keyframes bounce {
+        0% {
+            transform: translateY(0); /* Start and end at original position */
+            }
+            50% {
+            transform: translateY(-30px); /* Move up by 30px */
+            }
+            100% {
+                transform: translateY(0); /* Return to original position */
+                }
+    }
+    
